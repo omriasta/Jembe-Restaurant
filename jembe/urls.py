@@ -1,9 +1,9 @@
-from django.conf.urls import url
+from django.urls import re_path
 from jembe import views
 
 urlpatterns = [
-    url(r'^$', views.home, name="home"),
-    url(r'^reservation/$', views.NewReservation.as_view(), name="reservation"),
-    url(r'^contact/$', views.Contact.as_view(), name="contact"),
-    url(r'^payments/$', views.payment, name="payment"),
+    re_path(r'^$', views.home, name="home"),
+    re_path(r'^reservation/$', views.NewReservation.as_view(), name="reservation"),
+    re_path(r'^contact/$', views.Contact.as_view(), name="contact"),
+    re_path(r'^payments/$', views.payment, name="payment"),
 ]

@@ -139,3 +139,6 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 DATE_INPUT_FORMATS = ('%m-%d-%Y')
+DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
+
+
